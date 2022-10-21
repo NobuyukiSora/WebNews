@@ -1,0 +1,708 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===== Header ===== */
+header{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    z-index: 5;
+}
+header #lnav{
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.link{
+    width: auto;
+    height: 100%;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-left: 5px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    object-position: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.link:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(204,204,204);
+    height: 75px;
+}
+.backnav{
+    background-color: rgb(48, 48, 48);
+}
+.backnav:hover{
+    background-color: rgb(48, 48, 48);
+    transform: scale(1.5);
+}
+header #rnav{
+    float: right;
+    width: auto;
+    height: 100%;
+    top: 0;
+    padding: 2px 10px;
+}
+#rnav input{
+    height: 40px;
+    width: 120px;
+    float: left;
+    margin-top: 2px;
+    border-radius: 8px;
+    font-size: 17px;
+    border: 0px;
+    border-bottom: aliceblue;
+    width: 80%;
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+}
+.searchbtn{
+    height: 30px;
+    width: 30px;
+    margin-top: 2px;
+}
+#rnav button{
+    margin-top: 2px;
+    height: 40px;
+    width: 40px;
+    float: right;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 221, 221);
+}
+#rnav button:hover{
+    background-color: rgb(116, 116, 116);
+}
+a .back{
+    width: 30px;
+    background-color: white;
+    float: left;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+/* ===== Header2 ===== */
+#gen{
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    margin-top: 10px;
+}
+.genre{
+    position: -webkit-sticky;
+    position: sticky;
+}
+.link1{
+    padding: 9px 12px;
+    margin: 0px 3px 0px 3px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link1:hover{
+    background-color: black;
+}
+
+/* ===== hot news ===== */
+#hotnews{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+#hotnews a{
+    width: 100%;
+    height: 300px;
+}
+#hotnews a img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#hotnews a p{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 275px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+a .judulhot{
+    background-color: rgb(196, 196, 196);
+    opacity: 0.5;
+    color: rgb(196, 196, 196);
+    left: 0;
+    border-radius: 0px 50px 0px 0px;
+    font-weight: 800;
+    padding: 10px 20px 10px 10px;
+}
+a .judulhot2{
+    color: black;
+    left: 0;
+    border-radius: 0px 50px 0px 0px;
+    padding: 10px 20px 10px 10px;
+    font-weight: 800;
+}
+a .genrehot{
+    color: white;
+    background-color: rgb(51, 51, 51);
+    right: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+#hotnews:hover{
+    opacity: 0.5;
+}
+
+/* ===== Body ===== */
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+#listnews{
+    margin: 0px 70px 20px 70px;
+    background-color: rgb(196, 196, 196);
+    height: 200px;
+    border-radius: 8px;
+    transition: 1s;
+}
+a{    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    color: black;
+    transition: 1s;
+}
+#listnews:hover{
+    transform: scale(1.015);
+    background-color: rgb(51, 51, 51);
+}
+a:hover{
+    color: white;
+}
+#listnews img{
+    background-color: rgb(5, 5, 51);
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+#listnews .judul{
+    margin: 0px 10px 0px 0px;
+    width: 70%;
+    height: 100px;
+    height: 100%;
+    float: right;
+}
+h1 span{
+    float: right;
+    font-size: 20px;
+    background-color: rgb(68, 68, 68);
+    padding: 5px;
+    width: 140px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+/* ==== fotter ==== */
+#fotter{
+    width: auto;
+    height: auto;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 20px 50px 50px 50px;
+}
+.cpyright{
+    float: right;
+}
+
+/* ===== Body news ===== */
+#body{
+    width: 100%;
+    height: auto;
+    object-position: center;
+}
+#body .image{
+    height: 300px;
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: inline-block;
+}
+.image p{
+    position: absolute;
+    top: 290px;
+    right: 140px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+#body .jnews{
+    height: auto;
+    width: auto;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 10px 70px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 240, 240);
+}
+.writer{
+    display: inline-block;
+    font-weight: 900;
+}
+.tgl{
+    float: right;
+}
+.source{
+    color: white;
+}
+.source:hover{
+    color: rgb(122, 122, 122);
+}
+#body .isinews{
+    height: auto;
+    width: auto;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 30px 80px;
+    margin-bottom: 40px;
+    background-color: rgb(240, 240, 240);
+}
+.isinews p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: justify;
+    display: inline-block;
+}
+.video{
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin: 0px 30px 30px 0px;
+}
+.video a{
+    color: black;
+}
+
+/* ===== Covid bar ===== */
+#covid{
+    margin: 0px 20px 20px 20px;
+}
+#covid .judcov{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.isicov{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.isicov .datacov{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.datacov div{
+    display: inline-block;
+}
+.datacov div p{
+    font-weight: 800;
+}
+.imgemo{
+    margin-right: 10px;
+}
+.imgemo img{
+    width: 70px;
+    height: 70px;
+}
+.isicov .confirmed{
+    background-color: rgb(253, 128, 96);
+}
+.isicov .deaths{
+    background-color: rgb(232, 66, 88);
+}
+.isicov .recovered{
+    background-color: rgb(176, 216, 164);
+}
+.isicov .active{
+    background-color: rgb(162, 214, 219);
+}
+#covid .urlcov{
+    margin: 20px 0px 0px 0px;
+    text-align: right;
+}
+.urlcov a:hover{
+    color: rgb(116, 116, 116);
+}
+
+/* =================== Mobile ==================== */
+
+@media only screen and (max-width: 600px) {
+
+    /* ===== Header ===== */
+    header{
+        position: relative;
+        height: 40px;
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        z-index: 5;
+    }
+    header #lnav{
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .link{
+        width: auto;
+        height: 100%;
+        margin-right: 3px;
+        margin-left: 3px;
+        padding-left: 5px;
+        padding-top: 19px;
+        padding-bottom: 15px;
+        padding-right: 5px;
+        object-position: center;
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .backnav{
+        background-color: rgb(48, 48, 48);
+    }
+    header #rnav{
+        float: right;
+        width: auto;
+        height: 100%;
+        top: 0;
+        padding: 2px 10px;
+    }
+    #rnav input{
+        height: 20px;
+        width: 80px;
+        float: left;
+        border-radius: 8px;
+        margin-top: 5px;
+        font-size: 12px;
+        border: 0px;
+        border-bottom: aliceblue;
+        background-color: rgb(221, 221, 221);
+        color: rgb(0, 0, 0);
+    }
+    .searchbtn{
+        height: 10px;
+        width: 10px;
+        margin-top: 2px;
+    }
+    #rnav button{
+        margin-top: 5px;
+        margin-left: 3px;
+        height: 20px;
+        width: 20px;
+        float: right;
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(221, 221, 221);
+    }
+    a .back{
+        width: 20px;
+        background-color: white;
+        float: left;
+        margin-left: 5px;
+        border-radius: 8px;
+    }
+
+    /* ===== Header2 ===== */
+    #gen{
+        display: none;
+    }
+
+    /* ===== hot news ===== */
+    #hotnews{
+        margin-bottom: 20px;
+    }
+    #hotnews a{
+        width: 100%;
+        height: 200px;
+    }
+    #hotnews a img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    #hotnews a p{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 190px;
+        font-size: 12px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    a .judulhot{
+        background-color: rgb(196, 196, 196);
+        opacity: 0.5;
+        color: rgb(196, 196, 196);
+        left: 0;
+        border-radius: 0px 50px 0px 0px;
+        font-weight: 800;
+        padding: 5px 10px 5px 5px;
+    }
+    a .judulhot2{
+        color: black;
+        left: 0;
+        border-radius: 0px 50px 0px 0px;
+        padding: 5px 10px 5px 5px;
+        font-weight: 800;
+    }
+    a .genrehot{
+        color: white;
+        background-color: rgb(51, 51, 51);
+        right: 20px;
+        border-radius: 8px;
+        padding: 5px 10px;
+    }
+
+
+    /* ===== Body ===== */
+    body{
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    #listnews{
+        margin: 0px 20px 20px 20px;
+        background-color: rgb(196, 196, 196);
+        height: 120px;
+        border-radius: 8px;
+    }
+    a{    
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        width: auto;
+        height: auto;
+        color: black;
+    }
+    #listnews img{
+        background-color: rgb(5, 5, 51);
+        display: inline-block;
+        width: 100px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px 0px 0px 8px;
+    }
+    #listnews .judul{
+        margin: 0px 5px 0px 0px;
+        width: 65%;
+        height: 100%;
+        float: right;
+        font-size: 7px;
+    }
+    h1 span{
+        float: right;
+        font-size: 10px;
+        background-color: rgb(68, 68, 68);
+        padding: 5px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: center;
+        border-radius: 8px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    .judul p{
+        display: none;
+    }
+    
+    /* ==== fotter ==== */
+    #fotter{
+        width: auto;
+        height: auto;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        padding: 10px 25px 50px 25px;
+    }
+    .cpyright{
+        float: right;
+    }
+
+    /* ===== Body news ===== */
+    #body{
+        width: 100%;
+        height: auto;
+        object-position: center;
+    }
+    #body .image{
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .image img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        display: inline-block;
+    }
+    .image p{
+        position: absolute;
+        top: 200px;
+        right: 40px;
+        background-color: white;
+        width: 100px;
+        height: 20px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+    }
+    #body .jnews{
+        height: auto;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        object-fit: cover;
+        border-radius: 8px;
+        padding: 5px 35px;
+        margin-bottom: 10px;
+        background-color: rgb(240, 240, 240);
+    }
+    .jnews h1{
+        font-size: 20px;
+    }
+    .writer{
+        display: inline-block;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    .tgl{
+        float: right;
+        font-size: 10px;
+    }
+    .source{
+        color: white;
+    }
+    #body .isinews{
+        height: auto;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        object-fit: cover;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        background-color: rgb(240, 240, 240);
+    }
+    .isinews p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-align: justify;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .video{
+        height: 200px;
+        width: 100%;
+        float: left;
+        margin: 0px 30px 30px 0px;
+    }
+    .video a{
+        color: black;
+    }
+
+    /* ===== Covid bar ===== */
+    #covid{
+        margin: 0px 10px 10px 10px;
+    }
+    #covid .judcov{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .isicov{
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .isicov .datacov{
+        display: inline-block;
+        margin: 5px 5px 5px 5px;
+        border-radius: 8px;
+        text-align: left;
+        width: 135px;
+    }
+    .datacov div{
+        display: inline-block;
+    }
+    .datacov div h1{
+        font-size: 20px;
+    }
+    .datacov div p{
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .imgemo{
+        margin-right: 5px;
+    }
+    .imgemo img{
+        width: 35px;
+        height: 35px;
+    }
+    .isicov .confirmed{
+        background-color: rgb(253, 128, 96);
+    }
+    .isicov .deaths{
+        background-color: rgb(232, 66, 88);
+    }
+    .isicov .recovered{
+        background-color: rgb(176, 216, 164);
+    }
+    .isicov .active{
+        background-color: rgb(162, 214, 219);
+    }
+    #covid .urlcov{
+        margin: 20px 0px 0px 0px;
+        text-align: right;
+        font-size: 12px;
+    }
+}
